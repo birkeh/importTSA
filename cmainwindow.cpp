@@ -15,12 +15,10 @@ cMainWindow::cMainWindow(QWidget *parent)
 	cServerEntryList	serverEntryList;
 
 	serverEntryList.loadPath("C:/Users/birkeh/Downloads/TSA");
-	qDebug() << serverEntryList.count();
-//	serverEntry.load("C:\\Users\\birkeh\\Downloads\\TSA\\RP201810_ASFLIP21.xls");
+	serverEntryList.save("C:/Users/birkeh/Downloads/TSA/iSeries.xlsx");
 }
 
 cMainWindow::~cMainWindow()
 {
     delete ui;
 }
-

@@ -17,7 +17,7 @@ public:
 
 	bool		load(const QString& fileName);
 
-private:
+//private:
 	QString		m_fileName;
 	QString		m_serverName;
 	QDate		m_reportDate;
@@ -48,6 +48,7 @@ public:
 	explicit				cServerEntryList();
 
 	bool					loadPath(const QString& path);
+	bool					save(const QString& fileName);
 
 signals:
 
